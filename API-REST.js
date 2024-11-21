@@ -1,4 +1,4 @@
-const baseAPI = "https://6716056f33bc2bfe40bc0567.mockapi.io/items";
+const baseAPI = "http://localhost:8080/api/products";
 export async function getItemsFromApi() {
   const response = await fetch(baseAPI);
   const itemsData = await response.json();
